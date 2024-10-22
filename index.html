@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <title>Un Mundo Mejor</title>
+</head>
+<body>
+    <header>
+        <h1>EcoBotellas</h1>        
+    </header>
+    <main>
+        <div class="container divContainer">            
+            <p>EcoBotellas es una aplicación innovadora diseñada para facilitar la recolección y reciclaje de botellas de plástico. Los usuarios pueden programar recogidas a domicilio o encontrar puntos de entrega cercanos donde pueden dejar sus botellas de manera conveniente.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <section>
+                        <h4>Conoce nuestras ubicaciones</h4>
+                        <ul class="location-list">
+                            <li><a href="https://www.google.com/maps?q=14.647366889808577,-90.47722285294412" target="_blank">Centro Comercial Metronorte</a></li>
+                            <li><a href="https://www.google.com/maps?q=14.652649621082276,-90.51629521905625" target="_blank">Gasolinera Shell el Zapote</a></li>
+                            <li><a href="https://www.google.com/maps?q=14.645712685846002,-90.48187250435036" target="_blank">Mariano Galvez Portales</a></li>
+                            <li><a href="https://www.google.com/maps?q=14.647706029482311,-90.44793057199661" target="_blank">Gasolineta Puma Atlantico</a></li>
+                            <li><a href="https://www.google.com/maps?q=14.619174830333197,-90.55455125038593" target="_blank">Pricesmart MiraFlores</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section>
+                        <h4>Nuestro Equipo</h4>
+                        <div class="row">
+                            <div class="col-md-12 team-member">
+                                <img src="/img/WhatsApp Image 2021-02-09 at 01.05.59.jpeg" alt="Avatar 1">
+                                <p>Luis Daniel De León Carballo</p>
+                            </div>
+                            <div class="col-md-12 team-member">
+                                <img src="/img/Alejandro.jpeg" alt="Avatar 2">
+                                <p>Alejandro Flores</p>
+                            </div>
+                            <div class="col-md-12 team-member">
+                                <img src="/img/Ricardo Jose.jpeg" alt="Avatar 3">
+                                <p>Ricardo Jose Soto Chávez</p>
+                            </div>
+                            <div class="col-md-12 team-member">
+                                <img src="/img/Viery Estuardo.jpeg" alt="Avatar 4">
+                                <p>Viery Estuardo Gómez</p>
+                            </div>
+                            <div class="col-md-12 team-member">
+                                <img src="/img/Emilio.jpeg" alt="Avatar 4">
+                                <p>Jose Emilio Martinez</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 mt-3" style="margin-bottom: 20px;">
+                    <section class="row">
+                        <h4>Recompensas</h4>
+                        <p>En esta parte, selecciona el punto de entrega para obtener tu recompensa y contribuir a un mundo más limpio y sostenible. ¡Tu acción marca la diferencia!</p>
+                        <div class="form-group col-6">
+                            <label for="dropdownList">Selecciona punto de entrega:</label>
+                            <select class="form-control" id="dropdownList">
+                                <option value="0">Seleccione ubicación</option>
+                                <option value="1">Centro Comercial Metronorte</option>
+                                <option value="2">Gasolinera Shell el zapote</option>
+                                <option value="3">Mariano Galvez Portales</option>
+                                <option value="4">Gasolinera Puma Atlantico</option>
+                                <option value="5">Pricesmart Miraflores</option>
+                            </select>
+                        </div>                        
+                        <button type="button" class="btn btn-success" id="entregarBtn" style="height: 45px; margin-top: 25px;">
+                            Entregar
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Un Mundo Mejor. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
